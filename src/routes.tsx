@@ -1,22 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import InaccessibleHome from './pages/inaccessible/Home/Home';
-import AccessibleHome from './pages/accessible/Home/Home';
 import InaccessibleBlog from './pages/inaccessible/Blog/Blog';
-import Blog from './pages/accessible/Blog/Blog';
+import CheckboxPage from './pages/checkbox/Checkbox';
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: (
-      <AccessibleHome />
-    ),
-  },
-  {
-    path: '/blog',
-    element: (
-      <Blog />
-    ),
-  },
   {
     path: '/inaccessible',
     element: (
@@ -27,6 +14,12 @@ const router = createBrowserRouter([
     path: '/inaccessible/blog',
     element: (
       <InaccessibleBlog />
+    ),
+  },
+  {
+    path: '/checkbox-example',
+    element: (
+      <CheckboxPage />
     ),
   },
 ]);
